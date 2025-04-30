@@ -1,50 +1,78 @@
 body {
     font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa; /* Light gray Bootstrap background */
+    color: #333; /* Keep your text color */
+    margin: 0; /* Bootstrap handles margins with containers */
+    padding-top: 56px; /* Adjust for fixed navbar height */
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 20px;
+/* Override Bootstrap header styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Style the main header within the container */
+.container > header h1 {
+    margin-bottom: 0; /* Remove default margin */
 }
 
 main {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bootstrap's white background and padding are used */
+    border-radius: 0.25rem; /* Bootstrap's rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Bootstrap's shadow */
 }
 
 h2 {
-    color: #555;
+    color: #212529; /* Dark Bootstrap heading color */
     margin-top: 0;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
+    border-bottom: 0.1rem solid #dee2e6; /* Bootstrap's border */
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .product-list {
-    list-style: none;
-    padding: 0;
+    padding: 0; /* Already handled by Bootstrap grid */
 }
 
-.product-item {
-    padding: 0.5em 0;
-    border-bottom: 1px solid #eee;
+/* Style for individual product cards */
+.card {
+    border: 1px solid #ced4da; /* Bootstrap card border */
+    border-radius: 0.25rem; /* Bootstrap card border-radius */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle card shadow */
 }
 
-.product-item:last-child {
-    border-bottom: none;
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d; /* Bootstrap secondary text color */
+}
+
+/* Style for the "View Details" button */
+.btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    color: #777;
-    font-size: 0.8em;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #6c757d; /* Bootstrap secondary text color */
 }
