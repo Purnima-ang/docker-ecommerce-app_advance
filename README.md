@@ -13,6 +13,9 @@ Dockerized e-commerce storefront with the following services:
 - A GitHub account
 - A Docker Hub account
 
+# Bonus Requirement: Advanced Logging with ELK Stack
+- **ELK Stack:** Integrated for advanced logging, consisting of Elasticsearch, Logstash, and Kibana.
+
 **Setup:**
 
 - Clone: `git clone https://github.com/<your_github_username>/<your_repository_name>.git && cd <your_repository_name>`
